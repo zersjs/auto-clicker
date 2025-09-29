@@ -1,96 +1,56 @@
-# Pro Otomatik Tıklayıcı
+# Pro Auto Clicker
 
-Pro Otomatik Tıklayıcı, gelişmiş özelliklere sahip bir otomatik fare ve klavye kontrol programıdır. Oyunlarda, form doldurma işlemlerinde veya tekrarlayan görevlerde kullanılabilecek güçlü bir araçtır.
+**Pro Auto Clicker** is a powerful tool for automating mouse and keyboard actions. Whether you’re gaming, filling out repetitive forms, or handling routine tasks, it gives you advanced features to save time and effort.
 
-## Özellikler
+---
 
-- **Otomatik Tıklama**: Belirli aralıklarla sol, sağ veya orta fare tuşuyla tıklama
-- **Çoklu Konum Tıklama**: Birden fazla noktada sırayla tıklama
-- **Makro Kaydetme ve Oynatma**: Fare ve klavye hareketlerinizi kaydedip istediğiniz zaman tekrar oynatma
-- **Ekran Renk Algılama**: Ekranda belirli bir renk tespit edildiğinde otomatik tıklama
-- **Anti-AFK Sistemi**: Oyunlarda AFK (Away From Keyboard) kalmamak için rastgele tuşlara basma
-- **Hızlı Kısayollar**: Programı klavye kısayollarıyla kontrol etme
-- **Zamanlı Durdurma**: Belirli bir süre sonra otomatik durdurma
+## ✨ Features
 
-## Kullanım
+- **Auto Clicking**: Automatically click with the left, right, or middle mouse button at custom intervals  
+- **Multi-Point Clicking**: Set up multiple click positions and run them in sequence  
+- **Macro Recorder & Player**: Record your mouse and keyboard actions, then replay them anytime  
+- **Screen Color Detection**: Automatically click when a specific color appears on screen  
+- **Anti-AFK System**: Simulate random key presses to prevent AFK detection in games  
+- **Quick Hotkeys**: Start, stop, and control the program with customizable shortcuts  
+- **Timed Stop**: Automatically stop after a set duration  
 
-### Otomatik Tıklayıcı
+---
 
-1. **Tıklama Sekmesi**: Tıklama türünü, hızını ve sayısını ayarlayın
-2. **Başlat/Durdur**: F6 tuşu ile başlatın, F7 tuşu ile durdurun (değiştirilebilir)
-3. **Ayarlar**: İstenilen tıklama sayısını veya sonsuz tıklama seçeneğini belirleyin
+## 🖱️ How to Use
 
-### Çoklu Konum Tıklama
+### 🔹 Auto Clicker
+1. **Click Tab**: Choose the click type, speed, and number of clicks  
+2. **Start/Stop**: Use `F6` to start and `F7` to stop (keys can be changed)  
+3. **Settings**: Pick a specific number of clicks or run infinite clicking  
 
-1. **Konumlar Sekmesi**: "Konumları Kaydet" tuşuna basarak istediğiniz yerlere tıklayın
-2. **Kaydetmeyi Durdur**: İşlem tamamlandığında "Kaydetmeyi Durdur" tuşuna basın
-3. **Başlat**: Ana sekmeden "Başlat" tuşuna basarak sırayla tıklamaları başlatın
+### 🔹 Multi-Point Clicking
+1. **Positions Tab**: Press “Save Positions” and click on the spots you want  
+2. **Stop Recording**: When done, press “Stop Recording”  
+3. **Start**: Go to the main tab and press “Start” to run the sequence  
 
-### Makro Kaydedici
+### 🔹 Macro Recorder
+1. **Macro Tab**: Press “Record Macro” to begin  
+2. **Perform Actions**: Do the mouse and keyboard steps you want recorded  
+3. **Stop**: Press “Stop Recording” to finish  
+4. **Save Macro**: Give it a name and save it  
+5. **Play**: Press “Play” to run the recorded macro  
 
-1. **Makro Sekmesi**: "Makro Kaydet" tuşuna basarak kaydı başlatın
-2. **İşlemleri Yapın**: Kaydetmek istediğiniz fare ve klavye hareketlerini gerçekleştirin
-3. **Durdur**: "Kaydetmeyi Durdur" tuşuna basarak kaydı tamamlayın
-4. **Makroyu Kaydet**: Makroya isim vererek kaydedin
-5. **Oynat**: Kaydedilen makroyu "Oynat" tuşuna basarak çalıştırın
+### 🔹 Screen Color Detection
+1. **Detection Tab**: Click “Select Area” to choose the part of the screen to scan  
+2. **Pick Color**: Press “Pick Color” and select the target color  
+3. **Start**: Press “Start Scan” to begin detection  
 
-### Ekran Renk Algılama
+---
 
-1. **Ekran Algılama Sekmesi**: "Bölge Seç" tuşuna basarak taranacak ekran bölgesini belirleyin
-2. **Renk Seç**: "Renk Seç" tuşuna basıp algılanacak rengi seçin
-3. **Başlat**: "Taramayı Başlat" tuşuna basarak renk algılamayı başlatın
+## ⚙️ Installation
 
-## Kurulum
+### ✅ Ready-to-Use EXE
+1. Download the latest version and run it  
+   - Works standalone, no installation needed  
+   - Windows Defender might warn you — click **More Info > Run Anyway**  
 
-### Hazır EXE Kullanımı
-1. En yeni sürümü indirin ve çalıştırın
-   - Exe dosyası tek başına çalışır, kurulum gerektirmez
-   - Windows Defender uyarı verebilir, "Daha fazla bilgi" > "Yine de çalıştır" seçeneğini kullanın
-
-### Python İle Kullanım
-Geliştiriciler için Python kodunu çalıştırma:
-```
+### 💻 Running with Python
+For developers:  
+```bash
 pip install -r requirements.txt
 python main.py
-```
-
-### EXE Dosyası Oluşturma
-Kendi exe dosyanızı oluşturmak için:
-
-1. Gerekli paketleri yükleyin:
-   ```
-   pip install pyinstaller pillow customtkinter pynput
-   ```
-
-2. İkon indirin (veya kendi ikonunuzu kullanın):
-   ```
-   curl -o icon.png https://cdn.iconscout.com/icon/premium/png-256-thumb/mouse-click-1830550-1554513.png
-   ```
-
-3. Tek dosyalı EXE oluşturun:
-   ```
-   pyinstaller --onefile --windowed --icon=icon.png --name="Pro Otomatik Tiklayici" main.py
-   ```
-
-4. **İLERİ DÜZEY**: Daha hızlı çalışan ve daha gizli bir exe için aşağıdaki komut satırını kullanın:
-   ```
-   pyinstaller --onefile --windowed --icon=icon.png --noconsole --clean --add-data "icon.png;." --hidden-import PIL._tkinter_finder --name="Pro Otomatik Tiklayici" main.py
-   ```
-
-5. Oluşturulan exe dosyası `dist` klasöründe bulunacaktır.
-
-## İstek ve Öneriler
-
-Yeni özellikler veya geliştirmeler için iletişime geçebilirsiniz.
-
----
-
-## Telif Hakkı ve Lisans
-
-**© 2024 Created by ZERS. Tüm Hakları Saklıdır.**
-
-Bu yazılım, ZERS'e aittir ve telif hakları ile korunmaktadır. İzinsiz kopyalanması, dağıtılması veya değiştirilmesi yasaktır.
-
----
-
-**Not**: Bu program eğitim ve kişisel kullanım amaçlıdır. Kötüye kullanımdan kullanıcı sorumludur. 
