@@ -1,6 +1,6 @@
 # Auto Clicker
 
-** Auto Clicker** is a powerful tool for automating mouse and keyboard actions. Whether you’re gaming, filling out repetitive forms, or handling routine tasks, it gives you advanced features to save time and effort.
+**Auto Clicker** is a powerful tool for automating mouse and keyboard actions. Whether you’re gaming, filling out repetitive forms, or handling routine tasks, it gives you advanced features to save time and effort.
 
 ---
 
